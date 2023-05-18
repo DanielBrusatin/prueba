@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.png">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <div>
+            <img src="../images/logo.png" alt="Logo" class="logo">
+        </div>
+            
+
+        <!--Menú de navegación-->
+        <nav class="navegacion">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./tienda.html">TIENDA</a></li>
+                <li><a href="./configurador.html">CONFIGURADOR</a></li>
+                <li class="current"><a href="./contacto.html">CONTACTO</a></li>
+                <li><a href="./carrito.html">CARRITO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="principal_contacto">
+        <div><p>Seguinos y contactanos a traves de nuestras redes sociales</p></div>
+        <div id="redes">
+            <div><a href="https://api.whatsapp.com/send/?phone=5491167414593&text&type=phone_number&app_absent=0" target="_blank"><img src="../images/wp.png" alt="Logo whatsapp"></a></div>
+            <div><a href="https://www.instagram.com/design.koke/" target="_blank"><img src="../images/instagram.png" alt="Logo instagram"></a></div>
+            <div><a href="https://listado.mercadolibre.com.ar/_CustId_241834766" target="_blank"><img src="../images/mercado_libre.png" alt="Logo mercado libre"></a></div>
+        </div>
+
+        <div><p>O contactanos por mail llenando el siguiente formulario:</p></div>
+
+        <!-- Formulario de contacto -->
+        <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre..." class="bordes">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" placeholder="Escribe tu telefono..." class="bordes">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Escribe tu email..." class="bordes">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" placeholder="Escribe el asunto..." class="bordes">
+                <label for="adjunto">Adjuntar imagen</label>
+                <input type="file" id="adjunto">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="bordes"></textarea>
+                <button type="submit">ENVIAR</button>
+        </form>
+    </main>
+</body>
+</html>
