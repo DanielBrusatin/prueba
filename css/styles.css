@@ -7,7 +7,13 @@
     list-style: none;
 }
 
+/* Borrado de margin y padding Boostrap */
 .container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+.row {
+    margin: 0px;
     padding: 0px;
 }
 
@@ -24,29 +30,35 @@ header {
 header .logo { 
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 /* Menú navegación */
-header nav {
+header .navegacion {
+    padding: 0px;
 }
 
 header nav ul {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px;
-}
-header nav ul :first-child {
-    border: 0px;
 }
 header nav ul li {
     background-color: #FAC462;
     display: flex;
     flex: auto;
     justify-content: center;
-    border-left: 2px solid rgb(253, 165, 0);
+    align-items: center;
+    border-top: 3px solid rgb(253, 165, 0);
     /* border: 5px solid #ffffff00; */
     /* border-radius: 40px; */
     /* margin: 5px; */
 } 
+header nav ul :first-child {
+    border: 0px;
+}
 header nav ul li a {
     font-family: 'Sigmar', cursive;
     color: white;
