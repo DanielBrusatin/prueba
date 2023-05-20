@@ -8,66 +8,69 @@
 }
 
 /* Borrado de margin y padding Boostrap */
-.container-fluid {
+/* .container-fluid {
     margin: 0px;
     padding: 0px;
-}
-.row {
+} */
+/* .row {
     margin: 0px;
     padding: 0px;
-}
+} */
 
 /* Encabezado */
 header {
     /* position: sticky; */
     /* top: 0px; */
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/sandia.jpg);
     /* display: flex; */
     /* flex-direction:row; */
     /* justify-content: space-between; */
     /* align-items: center; */
 }
-header .logo { 
+/* header .logo { 
     display: flex;
     justify-content: center;
     padding: 5px;
-}
+} */
 /* Menú navegación */
-header .navegacion {
+/* header .navegacion {
     padding: 0px;
-}
+} */
 
-header nav ul {
+/* header nav ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+
     margin: 0px;
     padding: 0px;
-}
-header nav ul li {
+} */
+header .navbar button {
     background-color: #FAC462;
-    display: flex;
+    border: 3px solid #FDA500;
+}
+header .navbar .navbar-nav li {
+    background-color: #FAC462;
+    /* display: flex;
     flex: auto;
-    justify-content: center;
-    align-items: center;
-    border-top: 3px solid rgb(253, 165, 0);
+    justify-content: center; */
+    border-top: 3px solid #FDA500;
     /* border: 5px solid #ffffff00; */
     /* border-radius: 40px; */
     /* margin: 5px; */
 } 
-header nav ul :first-child {
+header .navbar .navbar-nav :first-child {
     border: 0px;
 }
-header nav ul li a {
+header .navbar .navbar-nav .nav-item a {
     font-family: 'Sigmar', cursive;
     color: white;
-    text-decoration: none;
     font-weight: 900;
     text-align: center;
 }
 header nav ul :hover {
-    background-color: rgb(253, 165, 0);
+    /* background-color: rgb(253, 165, 0); */
 }
 header nav ul .current {
     /* border: 5px solid rgb(253, 165, 0); */
@@ -79,11 +82,21 @@ main {
 }
 
 /* Menú lateral inicio*/
-main aside {
+aside {
     /* position: sticky; */
     /* top: 100px; */
     background-color: #C7DA64;
     /* width: 220px; */
+}
+
+#lateral_inicio {
+    padding: 0px;
+}
+#lateral_inicio nav ul {
+    margin: 0px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #lateral_inicio li {
     /* padding: 10px 10px; */
