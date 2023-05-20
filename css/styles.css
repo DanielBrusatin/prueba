@@ -55,22 +55,19 @@ header .navbar .navbar-nav li {
     /* display: flex;
     flex: auto;
     justify-content: center; */
-    border-top: 3px solid #FDA500;
+    border-bottom: 3px solid #FDA500;
     /* border: 5px solid #ffffff00; */
     /* border-radius: 40px; */
     /* margin: 5px; */
 } 
-header .navbar .navbar-nav :first-child {
-    border: 0px;
-}
 header .navbar .navbar-nav .nav-item a {
     font-family: 'Sigmar', cursive;
     color: white;
     font-weight: 900;
     text-align: center;
 }
-header nav ul :hover {
-    /* background-color: rgb(253, 165, 0); */
+header nav ul .current {
+    background-color: rgb(253, 165, 0);
 }
 header nav ul .current {
     /* border: 5px solid rgb(253, 165, 0); */
@@ -410,4 +407,24 @@ aside {
     align-self: flex-end;
     font-family: 'Sigmar', cursive;
     font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+    header .navbar div div {
+        justify-content: flex-end;
+    }
+    header .navbar .navbar-nav li {
+        /* display: flex; */
+        /* flex: auto; */
+        /* justify-content: center; */
+        border: 5px solid #ffffff00;
+        border-radius: 40px;
+        margin: 5px;
+    } 
+    header .navbar .navbar-nav li:hover {
+        border: 5px solid rgb(253, 165, 0);
+    }
+    header .navbar .navbar-nav .current {
+        background-color: rgb(253, 165, 0);
+    }
 }
