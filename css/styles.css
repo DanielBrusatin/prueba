@@ -27,7 +27,7 @@ header .navbar .navbar-nav .nav-item a {
     text-align: center;
 }
 header .navbar .navbar-nav .current {
-    background-color: rgb(253, 165, 0);
+    background-color: #FDA500;
 }
 
 /* Cuerpo principal */
@@ -65,7 +65,7 @@ main .lateral nav ul li a {
 }
 #principal_inicio h2 {
     font-family: 'Hahmlet', serif;
-    /* margin-bottom: 20px; */
+    margin: 20px 0px;
 }
 #principal_inicio article {
     /* margin-bottom: 30px; */
@@ -78,15 +78,16 @@ main .lateral nav ul li a {
 
 /* Boton Subir */
 .volver {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* margin-top: 20px; */
+    text-align: center;
+    margin: 20px;
 }
 .volver a {
     background-color: #FAC462;
     color: black;
-    /* padding: 4px; */
-    /* border-radius: 20px; */
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 5px #996300;
 }
 
 /* Slider ofertas */
@@ -139,6 +140,11 @@ main .lateral nav ul li a {
 /* Mapa */
 #mapa {
     /* margin: 20px 50px; */
+    display: flex;
+    justify-content: center;
+}
+#mapa iframe {
+    max-width: 100%;
 }
 
 /* Medios de pago */
