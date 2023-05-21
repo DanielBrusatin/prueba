@@ -7,58 +7,18 @@
     list-style: none;
 }
 
-/* Borrado de margin y padding Boostrap */
-/* .container-fluid {
-    margin: 0px;
-    padding: 0px;
-} */
-/* .row {
-    margin: 0px;
-    padding: 0px;
-} */
 
 /* Encabezado */
 header {
-    /* position: sticky; */
-    /* top: 0px; */
     background-image: url(../images/sandia.jpg);
-    /* display: flex; */
-    /* flex-direction:row; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
-/* header .logo { 
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-} */
-/* Menú navegación */
-/* header .navegacion {
-    padding: 0px;
-} */
-
-/* header nav ul {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    
-
-    margin: 0px;
-    padding: 0px;
-} */
 header .navbar button {
     background-color: #FAC462;
     border: 3px solid #FDA500;
 }
 header .navbar .navbar-nav li {
     background-color: #FAC462;
-    /* display: flex;
-    flex: auto;
-    justify-content: center; */
     border-bottom: 3px solid #FDA500;
-    /* border: 5px solid #ffffff00; */
-    /* border-radius: 40px; */
-    /* margin: 5px; */
 } 
 header .navbar .navbar-nav .nav-item a {
     font-family: 'Sigmar', cursive;
@@ -66,11 +26,8 @@ header .navbar .navbar-nav .nav-item a {
     font-weight: 900;
     text-align: center;
 }
-header nav ul .current {
+header .navbar .navbar-nav .current {
     background-color: rgb(253, 165, 0);
-}
-header nav ul .current {
-    /* border: 5px solid rgb(253, 165, 0); */
 }
 
 /* Cuerpo principal */
@@ -79,30 +36,27 @@ main {
 }
 
 /* Menú lateral inicio*/
-aside {
-    /* position: sticky; */
-    /* top: 100px; */
+main .lateral {
     background-color: #C7DA64;
-    /* width: 220px; */
-}
-
-#lateral_inicio {
     padding: 0px;
 }
-#lateral_inicio nav ul {
+main .lateral nav ul {
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
 }
-#lateral_inicio li {
-    /* padding: 10px 10px; */
+main .lateral nav ul li {
+    flex: 50%;
+    text-align: center;
+    padding: 0px 5px;
 }
-#lateral_inicio a {
+main .lateral nav ul li a {
     color: black;
     font-family: 'Sigmar', cursive;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Articulo principal inicio */
@@ -414,9 +368,6 @@ aside {
         justify-content: flex-end;
     }
     header .navbar .navbar-nav li {
-        /* display: flex; */
-        /* flex: auto; */
-        /* justify-content: center; */
         border: 5px solid #ffffff00;
         border-radius: 40px;
         margin: 5px;
@@ -424,7 +375,12 @@ aside {
     header .navbar .navbar-nav li:hover {
         border: 5px solid rgb(253, 165, 0);
     }
-    header .navbar .navbar-nav .current {
-        background-color: rgb(253, 165, 0);
+    main .lateral nav ul {
+        flex-direction: column;
     }
+    main .lateral nav ul li {
+        text-align: left;
+        margin: 5px 0px;
+    }
+    
 }
